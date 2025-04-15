@@ -3,10 +3,12 @@ import { useLoaderData } from 'react-router';
 
 const UserDetails = () => {
     const user = useLoaderData()
-    console.log(user)
+    const { name, website } = user
     return (
         <div>
             <h1>this is user Details</h1>
+            <h2>{name}</h2>
+            <h3>Website : {website}</h3>
         </div>
     );
 };
